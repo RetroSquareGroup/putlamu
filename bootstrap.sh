@@ -61,4 +61,4 @@ grunt wiredep
 echo "===================================="
 echo "Starting website..."
 echo "===================================="
-npm runserver
+npm run startserver
