@@ -48,9 +48,12 @@ npm install -g grunt-cli
 
 # update files
 echo "===================================="
-echo "Start development mode..."
+echo "Build website..."
 echo "===================================="
-grunt dev
+grunt webpack
+grunt uglify
+grunt copy
+grunt clean
 
 # start server
 echo "===================================="
