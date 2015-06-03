@@ -30,14 +30,9 @@ npm install
 
 # install bower
 echo "===================================="
-echo "Installing bower..."
+echo "Installing webpack..."
 echo "===================================="
-npm install -g bower
-
-echo "===================================="
-echo "Installing bower dependencies..."
-echo "===================================="
-bower install --allow-root --config.interactive=false
+npm install -g webpack
 
 # install pm2
 echo "===================================="
@@ -53,9 +48,9 @@ npm install -g grunt-cli
 
 # update files
 echo "===================================="
-echo "Wiring up website dependencies..."
+echo "Start development mode..."
 echo "===================================="
-grunt wiredep
+grunt dev
 
 # start server
 echo "===================================="
