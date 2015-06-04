@@ -1,4 +1,20 @@
 /*@ngInject*/
 module.exports = function SiteConfig($stateProvider, $urlRouterProvider) {
-  console.log('hello world!');
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+        .state('site',{
+            url: '/',
+            views: {
+                'header': {
+                    templateUrl: '/templates/partials/header.html'
+                },
+                'content': {
+                    templateUrl: '/templates/partials/content.html'
+                },
+                'footer': {
+                    templateUrl: '/templates/partials/footer.html'
+                }
+            }
+        });
 };

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         copy: {
           site: {
               cwd: 'site/',
-              src: 'index.html',
+              src: ['index.html','templates/partials/*.html'],
               dest: 'dist/',
               expand: true
           }
