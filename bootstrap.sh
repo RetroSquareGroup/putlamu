@@ -50,10 +50,8 @@ npm install -g grunt-cli
 echo "===================================="
 echo "Build website..."
 echo "===================================="
-grunt webpack
-grunt uglify
-grunt copy
-grunt clean
+grunt copy:site
+webpack
 
 # start server
 echo "===================================="
