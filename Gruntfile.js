@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             task1: {
-                files: ['dist/*.js','site/*.html'],
+                files: ['dist/*.js','site/**/*.html'],
                 tasks: ['copy:site']
             }        },
         copy: {
