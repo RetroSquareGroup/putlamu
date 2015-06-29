@@ -32,6 +32,11 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'jshint'
+        }],
+        loaders: [
+        {
+            test: /\.less$/,
+            loader: "style-loader!css-loader!less-loader"
         }]
     },
     jshint: {
